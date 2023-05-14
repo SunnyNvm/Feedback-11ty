@@ -6,8 +6,8 @@
 :root {
   --space: 8px;
   --wrapper-padding: calc(var(--space) * 3);
-  --wrapper-max-width: 70ch; 
-  --primary-color: hsl(114deg 27% 90%);
+  --wrapper-max-width: 70ch;
+  --primary-color: hsl(114deg 27% 95%);
   --secondary-color: hsl(0deg 100% 98%);
   --tertiary-color: hsl(41deg 44% 18%);
   --quaternary-color: hsl(0deg 72% 42% / 91%);
@@ -35,7 +35,6 @@ header {
 }
 
 nav {
-
   ul {
     display: flex;
     justify-content: space-evenly;
@@ -48,7 +47,7 @@ nav {
     position: relative;
     padding: calc(var(--space) * 2) var(--space);
 
-    &[aria-current="page"] {
+    &[aria-current='page'] {
       color: currentColor;
 
       &::before {
@@ -113,8 +112,7 @@ a {
     color: currentColor;
   }
 
-  &[href^="http"] {
-
+  &[href^='http'] {
     &::after {
       content: url(/images/external-link.svg);
       position: relative;
@@ -137,7 +135,8 @@ footer {
 
 :focus-visible {
   outline: none;
-  box-shadow: 0 0 0 1pt var(--quaternary-color), 0 0 0 2pt var(--quaternary-color);
+  box-shadow: 0 0 0 1pt var(--quaternary-color),
+    0 0 0 2pt var(--quaternary-color);
 }
 
 ::selection {
