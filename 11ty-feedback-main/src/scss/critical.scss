@@ -18,7 +18,16 @@
   scrollbar-color: var(--secondary-color) var(--primary-color);
 }
 
-header,
+header {
+  background-color: var(--secondary-color);
+
+  @media (min-width: 500px) {
+    margin-left: auto;
+    border-left: 1px dashed;
+    width: max-content;
+  }
+}
+
 footer {
   background-color: var(--secondary-color);
 
@@ -127,6 +136,7 @@ footer {
   padding: calc(var(--space) * 3);
   padding-bottom: calc(var(--space) * 2.5);
   text-align: center;
+  
 }
 
 :focus:not(:focus-visible) {
